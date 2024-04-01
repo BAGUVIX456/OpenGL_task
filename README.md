@@ -5,5 +5,12 @@ The plan:
 2. Learn the actual process behind rendering objects using OpenGL and shaders
 3. Learn advanced OpenGL topics if time permits
 
+The `render.cpp` file covers:
+1. Creating an OpenGL context and creating a blank window using GLFW
+2. Using GLAD to fetch OpenGL function implementations
+3. Declare some vertices
+4. Create VBOs and VAOs and bind them accordingly
+5. Define a very basic vertex and fragment shader to draw a simple 2D triangle
+
 <b>The presentation for submission: https://docs.google.com/presentation/d/1b-kvtvnTW1s_sBes-XlJiZFwofn3HyMzmxUmysxdlac/edit?usp=sharing</b>
 
