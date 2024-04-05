@@ -12,5 +12,10 @@ The `simple_triangle.cpp` file covers:
 4. Create a VBO and a VAO and bind them accordingly
 5. Define a very basic vertex and fragment shader to draw a simple 2D triangle
 
+The `double_triangle.cpp` file covers:
+1. Drawing multiple triangles
+2. Using more than one VBO and VAO to draw multiple objects
+3. Use two different fragment shaders and shader programs to colour the two triangles differently
+
 <b>The presentation for submission: https://docs.google.com/presentation/d/1b-kvtvnTW1s_sBes-XlJiZFwofn3HyMzmxUmysxdlac/edit?usp=sharing</b>
 
