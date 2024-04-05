@@ -66,8 +66,10 @@ int main()
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShader);
+    
     int success;
     char infoLog[512];
+    
     glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
     if(!success) 
     {
@@ -80,6 +82,7 @@ int main()
     fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShader);
+    
     glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
     if(!success)
     {
@@ -93,6 +96,7 @@ int main()
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
     glLinkProgram(shaderProgram);
+    
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
     if(!success)
     {
@@ -117,8 +121,6 @@ int main()
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-
-    // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     while(!glfwWindowShouldClose(window))
     {
